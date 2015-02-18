@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UIButton *addButton;
 
 @end
 
@@ -16,6 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.addButton.layer.cornerRadius = self.addButton.bounds.size.width/2;
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

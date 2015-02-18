@@ -14,6 +14,7 @@
 		8A1658B01A952FF000A4E6BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A1658AF1A952FF000A4E6BB /* Images.xcassets */; };
 		8A1658B31A952FF000A4E6BB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A1658B11A952FF000A4E6BB /* LaunchScreen.xib */; };
 		8A1658BF1A952FF000A4E6BB /* Floating_HeadsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1658BE1A952FF000A4E6BB /* Floating_HeadsTests.m */; };
+		8A1658CA1A95330D00A4E6BB /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A1658C91A95330D00A4E6BB /* BlurViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		8A1658B81A952FF000A4E6BB /* Floating HeadsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Floating HeadsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A1658BD1A952FF000A4E6BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A1658BE1A952FF000A4E6BB /* Floating_HeadsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Floating_HeadsTests.m; sourceTree = "<group>"; };
+		8A1658C81A95330D00A4E6BB /* BlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurViewController.h; path = ../BlurViewController.h; sourceTree = "<group>"; };
+		8A1658C91A95330D00A4E6BB /* BlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurViewController.m; path = ../BlurViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		8A1658A11A952FEF00A4E6BB /* Floating Heads */ = {
 			isa = PBXGroup;
 			children = (
+				8A1658C81A95330D00A4E6BB /* BlurViewController.h */,
+				8A1658C91A95330D00A4E6BB /* BlurViewController.m */,
 				8A1658A61A952FEF00A4E6BB /* AppDelegate.h */,
 				8A1658A71A952FEF00A4E6BB /* AppDelegate.m */,
 				8A1658A91A952FEF00A4E6BB /* ViewController.h */,
@@ -222,6 +227,7 @@
 				8A1658AB1A952FEF00A4E6BB /* ViewController.m in Sources */,
 				8A1658A81A952FEF00A4E6BB /* AppDelegate.m in Sources */,
 				8A1658A51A952FEF00A4E6BB /* main.m in Sources */,
+				8A1658CA1A95330D00A4E6BB /* BlurViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
