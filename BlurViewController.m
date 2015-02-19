@@ -105,19 +105,24 @@
     
 }
 
-
 -(void)roundProfileImages {
     
     // round profile images
     self.profileButton1.layer.cornerRadius = self.profileButton1.frame.size.width/2;
+    self.profileButton1.clipsToBounds = YES;
     
     self.profileButton2.layer.cornerRadius = self.profileButton2.bounds.size.width/2;
+    self.profileButton2.clipsToBounds = YES;
     
     self.profileButton3.layer.cornerRadius = self.profileButton3.bounds.size.width/2;
-   
+    self.profileButton3.clipsToBounds = YES;
+    
     self.profileButton4.layer.cornerRadius = self.profileButton4.bounds.size.width/2;
-   
+    self.profileButton4.clipsToBounds = YES;
+    
     self.profileButton5.layer.cornerRadius = self.profileButton5.bounds.size.width/2;
+    self.profileButton5.clipsToBounds = YES;
+    
     
 }
 
