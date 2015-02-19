@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddContactProtocol.h"
+#import "BlurViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AddContactProtocol>
 
 
 @end

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddContactProtocol.h"
 
 @interface BlurViewController : UIViewController
+
+@property (nonatomic, weak) id<AddContactProtocol>delegate;
+
 
 @end

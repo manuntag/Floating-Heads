@@ -43,6 +43,7 @@
 		8A1658BE1A952FF000A4E6BB /* Floating_HeadsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Floating_HeadsTests.m; sourceTree = "<group>"; };
 		8A1658C81A95330D00A4E6BB /* BlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurViewController.h; path = ../BlurViewController.h; sourceTree = "<group>"; };
 		8A1658C91A95330D00A4E6BB /* BlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurViewController.m; path = ../BlurViewController.m; sourceTree = "<group>"; };
+		8A1658CB1A95684300A4E6BB /* AddContactProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddContactProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +85,9 @@
 		8A1658A11A952FEF00A4E6BB /* Floating Heads */ = {
 			isa = PBXGroup;
 			children = (
+				8A1658CB1A95684300A4E6BB /* AddContactProtocol.h */,
 				8A1658C81A95330D00A4E6BB /* BlurViewController.h */,
 				8A1658C91A95330D00A4E6BB /* BlurViewController.m */,
-				8A1658A61A952FEF00A4E6BB /* AppDelegate.h */,
-				8A1658A71A952FEF00A4E6BB /* AppDelegate.m */,
 				8A1658A91A952FEF00A4E6BB /* ViewController.h */,
 				8A1658AA1A952FEF00A4E6BB /* ViewController.m */,
 				8A1658AC1A952FF000A4E6BB /* Main.storyboard */,
@@ -101,6 +101,8 @@
 		8A1658A21A952FEF00A4E6BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A1658A61A952FEF00A4E6BB /* AppDelegate.h */,
+				8A1658A71A952FEF00A4E6BB /* AppDelegate.m */,
 				8A1658A31A952FEF00A4E6BB /* Info.plist */,
 				8A1658A41A952FEF00A4E6BB /* main.m */,
 			);
@@ -420,6 +422,7 @@
 				8A1658C41A952FF000A4E6BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A1658C51A952FF000A4E6BB /* Build configuration list for PBXNativeTarget "Floating HeadsTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +431,7 @@
 				8A1658C71A952FF000A4E6BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
