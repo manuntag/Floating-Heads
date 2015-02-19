@@ -102,6 +102,7 @@
     self.exitButton.layer.shadowOffset= CGSizeMake(2, 2);
     self.exitButton.layer.shadowOpacity= 1;
     self.exitButton.layer.shadowRadius = 1.0;
+    self.exitButton.layer.shadowPath = [UIBezierPath bezierPathWithOvalInRect:self.exitButton.layer.bounds].CGPath;
     
 }
 
@@ -122,8 +123,7 @@
     
     self.profileButton5.layer.cornerRadius = self.profileButton5.bounds.size.width/2;
     self.profileButton5.clipsToBounds = YES;
-    
-    
+
 }
 
 
