@@ -38,14 +38,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
     //round button
     self.exitButton.layer.cornerRadius = self.exitButton.bounds.size.width/2;
     
-    self.exitButton.layer.shadowColor = [UIColor grayColor].CGColor;
-    self.exitButton.layer.shadowOffset= CGSizeMake(2, 2);
-    self.exitButton.layer.shadowOpacity= 1;
-    self.exitButton.layer.shadowRadius = 1.0;
+    
+    [self addShadowToButton];
     
     //to do: use shadow path for google material design effect
     
@@ -84,8 +81,6 @@
     
 }
 
-
-
 -(void)applyBlurEffectToViewController {
     
     // apply blur effect to background
@@ -101,31 +96,31 @@
     
 }
 
+-(void)addShadowToButton {
+    
+    self.exitButton.layer.shadowColor = [UIColor grayColor].CGColor;
+    self.exitButton.layer.shadowOffset= CGSizeMake(2, 2);
+    self.exitButton.layer.shadowOpacity= 1;
+    self.exitButton.layer.shadowRadius = 1.0;
+    
+}
+
+
 -(void)roundProfileImages {
     
     // round profile images
     self.profileButton1.layer.cornerRadius = self.profileButton1.frame.size.width/2;
-    self.profileButton1.clipsToBounds = YES;
     
     self.profileButton2.layer.cornerRadius = self.profileButton2.bounds.size.width/2;
-    self.profileButton2.clipsToBounds = YES;
     
     self.profileButton3.layer.cornerRadius = self.profileButton3.bounds.size.width/2;
-    self.profileButton3.clipsToBounds = YES;
-    
+   
     self.profileButton4.layer.cornerRadius = self.profileButton4.bounds.size.width/2;
-    self.profileButton4.clipsToBounds = YES;
-    
+   
     self.profileButton5.layer.cornerRadius = self.profileButton5.bounds.size.width/2;
-    self.profileButton5.clipsToBounds = YES;
     
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 /*
 #pragma mark - Navigation

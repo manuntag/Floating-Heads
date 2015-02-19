@@ -16,22 +16,11 @@
 
 @implementation ViewController
 
--(void)didTapButton:(BlurViewController*)blurViewController buttonIndexNumber:(NSNumber*)buttonNumber {
-    
-    NSLog(@"Profile number %@ was pressed", buttonNumber);
-    
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.addButton.layer.cornerRadius = self.addButton.bounds.size.width/2;
-    self.addButton.layer.shadowColor = [UIColor grayColor].CGColor;
-    self.addButton.layer.shadowOffset= CGSizeMake(2, 2);
-    self.addButton.layer.shadowOpacity= 1;
-    self.addButton.layer.shadowRadius = 1.0;
+    [self addShadowToButton];
     
-       // Do any additional setup after loading the view, typically from a nib.
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -44,10 +33,21 @@
     }
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)didTapButton:(BlurViewController*)blurViewController buttonIndexNumber:(NSNumber*)buttonNumber {
+    
+    NSLog(@"Profile number %@ was pressed", buttonNumber);
+    
 }
+
+-(void)addShadowToButton {
+    
+    self.addButton.layer.cornerRadius = self.addButton.bounds.size.width/2;
+    self.addButton.layer.shadowColor = [UIColor grayColor].CGColor;
+    self.addButton.layer.shadowOffset= CGSizeMake(2, 2);
+    self.addButton.layer.shadowOpacity= 1;
+    self.addButton.layer.shadowRadius = 1.0;
+    
+}
+
 
 @end
